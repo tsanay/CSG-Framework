@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 0) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>root project 'CSGFramework'</td>
+              <td>0</td>
+            <td>13 Jul 2020, 13:18</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_clicks_on_edit_profile_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_clicks_on_option(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="76000000">0.076</td>
+              <td class="duration" data-value="76000000">0.108</td>
+              <td class="duration" data-value="456000000">0.456</td>
+              <td class="failed">83.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_clicks_on_sub_option(java.lang.String,java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="457833333">0.457</td>
+              <td class="duration" data-value="457833333">0.725</td>
+              <td class="duration" data-value="2747000000">2.747</td>
+              <td class="failed">83.33%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_clicks_on_the_pencil_icon(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_is_taken_to_page(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="571428">0.000</td>
+              <td class="duration" data-value="571428">0.003</td>
+              <td class="duration" data-value="4000000">0.004</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_is_taken_to_profile(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="166666">0.000</td>
+              <td class="duration" data-value="166666">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.CommonStep.user_writes_the_following_name_in_the_search_box(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.DashboardStep.user_clicks_on_Log_out_option()</td>
+              <td>1</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="duration" data-value="294000000">0.294</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.DashboardStep.user_clicks_on_username_located_on_the_top_right_corner()</td>
+              <td>1</td>
+              <td class="duration" data-value="107000000">0.107</td>
+              <td class="duration" data-value="107000000">0.107</td>
+              <td class="duration" data-value="107000000">0.107</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.DashboardStep.user_navigated_to_dashboard()</td>
+              <td>6</td>
+              <td class="duration" data-value="37500000">0.037</td>
+              <td class="duration" data-value="37500000">0.049</td>
+              <td class="duration" data-value="225000000">0.225</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.Hook.setUp()</td>
+              <td>7</td>
+              <td class="duration" data-value="4272857142">4.272</td>
+              <td class="duration" data-value="4272857142">6.221</td>
+              <td class="duration" data-value="29910000000">29.910</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.Hook.tearDown()</td>
+              <td>7</td>
+              <td class="duration" data-value="820714285">0.820</td>
+              <td class="duration" data-value="820714285">1.222</td>
+              <td class="duration" data-value="5745000000">5.745</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.LoginStep.the_following_error_message_should_display(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="51000000">0.051</td>
+              <td class="duration" data-value="51000000">0.051</td>
+              <td class="duration" data-value="51000000">0.051</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.LoginStep.user_clicks_on_login_button()</td>
+              <td>7</td>
+              <td class="duration" data-value="5590428571">5.590</td>
+              <td class="duration" data-value="5590428571">7.248</td>
+              <td class="duration" data-value="39133000000">39.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.LoginStep.user_enters_username_password(java.lang.String,java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="329142857">0.329</td>
+              <td class="duration" data-value="329142857">0.477</td>
+              <td class="duration" data-value="2304000000">2.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.LoginStep.user_is_on_skynet_health_care_page()</td>
+              <td>7</td>
+              <td class="duration" data-value="2164571428">2.164</td>
+              <td class="duration" data-value="2164571428">10.003</td>
+              <td class="duration" data-value="15152000000">15.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.error_toast_notification(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.successful_modal(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.user_clicks_on_add_resident_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="200000">0.000</td>
+              <td class="duration" data-value="200000">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.user_clicks_on_button_located_above_the_table(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="490250000">0.490</td>
+              <td class="duration" data-value="490250000">0.697</td>
+              <td class="duration" data-value="1961000000">1.961</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.user_clicks_on_edit_resident_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.user_clicks_on_modal_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">skynet.stepsDef.ResidentStep.user_enters_the_following_data(io.cucumber.datatable.DataTable)</td>
+              <td>7</td>
+              <td class="duration" data-value="142857">0.000</td>
+              <td class="duration" data-value="142857">0.001</td>
+              <td class="duration" data-value="1000000">0.001</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>23</td>
+            <td>99</td>
+            <td class="duration">0.990</td>
+            <td class="duration">39.133</td>
+            <td class="duration">1:38.092</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
